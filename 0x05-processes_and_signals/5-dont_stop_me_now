@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Script that stops an infinite loop
-
-kill "$(pgrep -f 4-to_infinity_and_beyond)"
+#Kill the procces of the task 4
+pid=$(pgrep -f "4-to_infinity_and_beyond")
+kill "$pid"
